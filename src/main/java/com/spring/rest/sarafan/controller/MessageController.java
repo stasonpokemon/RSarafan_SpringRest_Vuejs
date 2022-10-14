@@ -19,6 +19,8 @@ public class MessageController {
     @Autowired
     public MessageRepository messageRepository;
 
+
+
     @GetMapping
     @JsonView(Views.IdText.class)
     public List<Message> list() {

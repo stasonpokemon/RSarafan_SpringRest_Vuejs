@@ -16,6 +16,12 @@ import java.time.LocalDateTime;
 @Table(name = "messages")
 public class Message {
 
+    /**
+     * если методы в контроллере Get, Post, Put, Delete и тд будут помеченны аннотацией  @JsonView() с определённым уровнем поля,
+     * например @JsonView(Views.IdText.class) , то json будет возвращать объект, включающий только те поля,
+     * которые помечены аннотацией @JsonView(Views.IdText.class) или помеченые пердками
+     */
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonView(Views.Id.class)
