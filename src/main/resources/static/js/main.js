@@ -63,12 +63,12 @@ Vue.component('message-row', {
     props: ['message', 'editMethod', 'messages'],
     template:
         '<div>' +
-        '<i>{{ message.id }}</i>{{ message.text }}' +
-        '<span style="position: absolute; right: 0">' +
-        // @click = v-on:click
-        '<input type="button" value="Edit" @click="edit"/>' +
-        '<input type="button" value="x" @click="del"/>' +
-        '</span>' +
+            '<i>{{ message.id }}</i>{{ message.text }}' +
+            '<span style="position: absolute; right: 0">' +
+                // @click = v-on:click
+                '<input type="button" value="Edit" @click="edit"/>' +
+                '<input type="button" value="x" @click="del"/>' +
+            '</span>' +
         '</div>',
     methods: {
         edit: function () {
