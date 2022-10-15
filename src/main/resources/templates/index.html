@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sarafan</title>
+    <!-- версия для разработки, отображает полезные предупреждения в консоли -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- связь клиента и сервера-->
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.3"></script>
+    <!-- если пользов атель на frontend видит переменную  frontendData в которой заполненно поле profile,
+    значит он авторизован, в противном слуяае требуется авторизация -->
+    <script th:inline="javascript">
+        // переменная frontendData нужна для передачи её в main.js
+        var frontendData = [[${frontendData}]];
+    </script>
+</head>
+<body>
+<h3>Sarafan</h3>
+<div id="app"></div>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-package com.spring.rest.sarafan.controller;
+package com.spring.rest.sarafan.controller.rest;
 
 import com.fasterxml.jackson.annotation.JsonView;
 import com.spring.rest.sarafan.domain.Message;
